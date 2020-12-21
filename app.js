@@ -1,8 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 
+
+app.use(cors());
 // Express EJS Template
 app.set('view engine', 'ejs')
 app.set('views', './views')
